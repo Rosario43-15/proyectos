@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../imgs/logo.jpg" type="image/x-icon">
+  <title>Menu Principal</title>
+  <link rel="stylesheet" href="../CSS/inicio.css">
+</head>
+
+<body>
+
+  <div class="pref">
+
+    <div class="sidebar">
+      <h2 id="userNameTitle">Usuario</h2>
+      <h2>Selecciona una opción</h2>
+
+
+      <button class="dropdown-button" onclick="toggleDropdown('laberintosDropdown')">Laberintos</button>
+      <div id="laberintosDropdown" class="dropdown-content">
+        <a href="#" onclick="changeIframeSrc('./maze/easyLevel.html')">Laberinto 1</a>
+        <a href="#" onclick="changeIframeSrc('./maze/intermediateLevel.html')">Laberinto 2</a>
+        <a href="#" onclick="changeIframeSrc('./maze/hardLevel.html')">Laberinto 3</a>
+      </div>
+
+      <br><br>
+
+      <button class="dropdown-button" id="loginLogoutButton" onclick="toggleLoginLogout()"></button>
+    </div>
+
+
+    <iframe id="laberintoIframe" src="./Binevenida.html"></iframe>
+  </div>
+
+  <script src="../JS/inicio.js"></script>
+
+</body>
+
+</html>
